@@ -4,8 +4,8 @@ Feature: Realizar divison y multiplicacion en Basic Calculator
 
   Scenario Outline: Realizar Multiplicacion
 
-    Given Ingreso a basic calculator multiplicacion
-    When  ingreso <numero_01> y multiplico por <numero_02>
+    Given Ingreso a basic calculator multiplicacion ingresa <numero_01> multiplicado por <numero_02>
+    When  seleccione tipo de operacion
     Then  me deberia dar <resultado>
 
     Examples:
@@ -18,9 +18,9 @@ Feature: Realizar divison y multiplicacion en Basic Calculator
 
   Scenario Outline: Realizar Division
 
-    Given Ingreso a basic calculator divison
-    When  ingreso <numero_03> y y divido por <numero_04>
-    Then  me deberia dar <resultado_div>
+    Given Ingreso este numero <numero_03> dividido por <numero_04>
+    When  seleccion de division
+    Then  me deberia dar division <resultado_div>
 
     Examples:
       | numero_03    |  numero_04 |  resultado_div  |

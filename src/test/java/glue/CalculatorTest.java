@@ -43,6 +43,7 @@ public class CalculatorTest {
         select.selectByVisibleText("Multiply");
         WebElement calcular = driver.findElement(By.id("calculateButton"));
         calcular.click();
+        //Validacion
 
     }
 
